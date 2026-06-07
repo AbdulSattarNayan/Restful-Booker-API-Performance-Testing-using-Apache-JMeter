@@ -47,7 +47,7 @@ The test suite was executed in **Non-GUI Mode** for optimized performance testin
 │   └── Restful-booker_API_Performance_testing.jmx
 │
 ├── 📁 Results
-│   └── results.jtl
+│   └── Restful-booker_API_Performance_testing.jtl
 │
 ├── 📁 Report
 │   ├── index.html
@@ -57,7 +57,7 @@ The test suite was executed in **Non-GUI Mode** for optimized performance testin
 ├── 📁 Screenshots
 │   ├── dashboard.png
 │   ├── throughput.png
-│   └── response-time.png
+│   └── statistics.png
 │
 └── README.md
 ```
