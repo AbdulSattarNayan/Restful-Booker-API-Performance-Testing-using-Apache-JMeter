@@ -1,88 +1,180 @@
-# Restful-Booker-API-Performance-Testing-using-Apache-JMeter
+# 🚀 Restful Booker API Performance Testing using Apache JMeter
 
-## Project Overview
-
-This project demonstrates performance testing of the Restful Booker API using Apache JMeter.
-The test suite evaluates API performance, response time, throughput, scalability, and error handling under load conditions.
-
-The project includes:
-
-* JMeter Test Plan (`.jmx`)
-* Result Log File (`.jtl`)
-* HTML Dashboard Report
-* Performance Metrics Analysis
+<p align="center">
+  <img src="https://img.shields.io/badge/Tool-Apache%20JMeter-red?style=for-the-badge&logo=apachejmeter"/>
+  <img src="https://img.shields.io/badge/Testing-Performance%20Testing-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/API-Restful%20Booker-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+</p>
 
 ---
 
-## Tools & Technologies
+# 📌 Project Overview
 
-* Apache JMeter
-* Restful Booker API
-* HTML Dashboard Report
-* CSV/JTL Result Files
-* Git & GitHub
+This project focuses on **Performance Testing** of the **Restful Booker API** using **Apache JMeter**.
+
+The primary goal of this project is to evaluate:
+
+* API response time
+* Throughput
+* Concurrent user handling
+* Server stability under load
+* Error percentage
+* Overall application performance
+
+The test suite was executed in **Non-GUI Mode** for optimized performance testing and detailed HTML dashboard reports were generated for analysis.
 
 ---
 
-## Project Structure
+# 🛠️ Technologies Used
+
+| Tool               | Purpose              |
+| ------------------ | -------------------- |
+| Apache JMeter      | Performance Testing  |
+| Restful Booker API | API Under Test       |
+| HTML Dashboard     | Report Visualization |
+| Git & GitHub       | Version Control      |
+| CSV / JTL          | Result Logging       |
+
+---
+
+# 📂 Project Structure
 
 ```bash
-project-folder/
+📦 Restful-Booker-Performance-Testing
 │
-├── TestPlan/
+├── 📁 TestPlan
 │   └── Restful-booker_API_Performance_testing.jmx
 │
-├── Results/
+├── 📁 Results
 │   └── results.jtl
 │
-├── Report/
-│   └── index.html
+├── 📁 Report
+│   ├── index.html
+│   ├── content/
+│   └── statistics.json
 │
-├── Screenshots/
+├── 📁 Screenshots
+│   ├── dashboard.png
+│   ├── throughput.png
+│   └── response-time.png
 │
 └── README.md
 ```
 
 ---
 
-## Test Scenarios
+# 🎯 Test Objectives
 
-The following API operations were tested:
+The following objectives were covered during testing:
 
-* Authentication API
-* Create Booking
-* Get Booking
-* Update Booking
-* Delete Booking
+✅ Validate API stability under load
+✅ Measure response time and latency
+✅ Analyze throughput performance
+✅ Detect bottlenecks and failures
+✅ Generate detailed performance reports
+✅ Evaluate scalability of the API system
 
 ---
 
-## Performance Metrics Covered
+# 🔍 API Endpoints Tested
 
-* Response Time
-* Throughput
-* Error Percentage
+| API Endpoint   | Method |
+| -------------- | ------ |
+| Authentication | POST   |
+| Create Booking | POST   |
+| Get Booking    | GET    |
+| Update Booking | PUT    |
+| Delete Booking | DELETE |
+
+---
+
+# ⚡ Load Testing Configuration
+
+| Configuration   | Value               |
+| --------------- | ------------------- |
+| Number of Users | 100+                |
+| Ramp-Up Period  | Configurable        |
+| Loop Count      | Multiple Iterations |
+| Test Mode       | Non-GUI             |
+| Report Type     | HTML Dashboard      |
+
+---
+
+# 📊 Performance Metrics Analyzed
+
+The following metrics were analyzed from the JMeter dashboard report:
+
 * APDEX Score
-* Requests Summary
-* Concurrent Users Handling
+* Average Response Time
+* Error Percentage
+* Throughput
+* Transactions Per Second
+* Response Time Distribution
+* Concurrent Requests
+* Top Errors Analysis
 
 ---
 
-## Running the Test
+# 📈 HTML Dashboard Report
 
-### Run JMeter Test in Non-GUI Mode
+The generated dashboard report includes:
+
+* 📌 APDEX Analysis
+* 📌 Request Summary
+* 📌 Throughput Graph
+* 📌 Response Time Graph
+* 📌 Error Statistics
+* 📌 Top 5 Errors
+* 📌 Detailed Statistics Table
+
+---
+
+# 🖼️ Report Screenshots
+
+## Dashboard Overview
+
+<p align="center">
+  <img src="./Screenshots/dashboard.png" width="900"/>
+</p>
+
+---
+
+## Throughput Graph
+
+<p align="center">
+  <img src="./Screenshots/throughput.png" width="900"/>
+</p>
+
+---
+
+## Response Time Analysis
+
+<p align="center">
+  <img src="./Screenshots/response-time.png" width="900"/>
+</p>
+
+---
+
+# ▶️ How to Run the Test
+
+## Run JMeter Test in Non-GUI Mode
 
 ```bash
 jmeter -n -t Restful-booker_API_Performance_testing.jmx -l results.jtl
 ```
 
-### Generate HTML Dashboard Report
+---
+
+## Generate HTML Report
 
 ```bash
 jmeter -g results.jtl -o report
 ```
 
-### Run and Generate Report Together
+---
+
+## Run Test + Generate Report Together
 
 ```bash
 jmeter -n -t Restful-booker_API_Performance_testing.jmx -l results.jtl -e -o report
@@ -90,47 +182,56 @@ jmeter -n -t Restful-booker_API_Performance_testing.jmx -l results.jtl -e -o rep
 
 ---
 
-## Dashboard Report
+# 📄 View Report
 
-The HTML dashboard contains:
-
-* APDEX Report
-* Statistics Table
-* Throughput Graph
-* Response Time Graph
-* Error Analysis
-
-To view the report:
+Open the following file in browser:
 
 ```bash
 report/index.html
 ```
 
-Open the file in any browser.
-
 ---
 
-## Learning Outcomes
+# 📌 Key Learning Outcomes
 
-Through this project, I learned:
+Through this project, I gained practical experience in:
 
 * API Performance Testing
-* Load & Stress Testing
-* JMeter Test Plan Design
-* Report Generation & Analysis
-* Performance Metrics Interpretation
+* Load Testing & Stress Testing
+* Apache JMeter Test Plan Design
+* HTML Dashboard Report Analysis
+* Throughput & Latency Analysis
+* Error Investigation
+* Non-GUI Execution
+* Real-world Performance Monitoring
 
 ---
 
-## Author
+# 🚀 Future Improvements
 
-Md Abdul Sattar Nayan
-
-Department of Computer Science & Engineering
-Comilla University
+* Add Distributed Load Testing
+* Integrate CI/CD Pipeline
+* Add Automated Performance Benchmarking
+* Integrate Grafana & InfluxDB
+* Cloud-based Load Testing
 
 ---
 
-## License
+# 👨‍💻 Author
 
-This project is for educational and learning purposes.
+## Md Abdul Sattar Nayan
+
+🎓 Department of Computer Science & Engineering
+🏛️ Comilla University
+
+---
+
+# ⭐ If You Like This Project
+
+Give this repository a ⭐ on GitHub.
+
+---
+
+# 📜 License
+
+This project is created for educational and learning purposes.
