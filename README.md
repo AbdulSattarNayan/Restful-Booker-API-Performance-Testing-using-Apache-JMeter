@@ -140,6 +140,14 @@ The generated dashboard report includes:
 
 ---
 
+## Statistics
+
+<p align="center">
+  <img src="./Screenshots/statistics.png" width="900"/>
+</p>
+
+---
+
 ## Throughput Graph
 
 <p align="center">
@@ -148,13 +156,6 @@ The generated dashboard report includes:
 
 ---
 
-## Response Time Analysis
-
-<p align="center">
-  <img src="./Screenshots/response-time.png" width="900"/>
-</p>
-
----
 
 # ▶️ How to Run the Test
 
